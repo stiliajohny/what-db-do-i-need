@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Selector Tool</title>
+    <!-- Tailwind CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Add favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body class="bg-gradient-to-br from-green-400 to-blue-500 min-h-screen flex items-center justify-center">
+    <main class="container max-w-4xl mx-auto p-5 bg-white rounded-lg shadow-lg relative">
+        <div class="absolute right-5 top-5">
+            <a href="https://github.com/stiliajohny/what-db-do-i-need" target="_blank">
+                <i class="fab fa-github fa-2x text-gray-800 hover:text-gray-600"></i>
+            </a>
+        </div>
+        <section aria-labelledby="quizSection" class="bg-opacity-90">
+            <div class="text-center">
+                <header id="quizHeader" class="py-4">
+                    <h1 class="text-4xl font-bold text-purple-700">Database Selector Questionare </h1>
+                </header>
+                <div id="questionCounter" class="text-lg font-semibold text-gray-700 mb-4" role="status"
+                    aria-live="polite"></div>
+                <!-- Counter element -->
+                <article id="quiz" aria-label="Quiz Questions" class="text-gray-800"></article>
+                <footer id="result" class="mt-4" aria-labelledby="resultTitle"></footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Required JS libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="index.js"> </script>
+</body>
+
+</html>
